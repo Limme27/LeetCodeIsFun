@@ -65,13 +65,11 @@ public class TopKFrequentElements_347 {
     return ans;
   }
 
-  public int[] topKFrequent(int[] nums, int k) {
-
-  }
+ 
   
   public static void main(String[] args) {
     TopKFrequentElements_347 t = new TopKFrequentElements_347();
     int[] a = {1,1,1,2,2,3};
-    System.out.println(t.topKFrequent(a, 2));
+    System.out.println(t.topKFrequentSpaceHeavy(a, 2));
   }
 }
