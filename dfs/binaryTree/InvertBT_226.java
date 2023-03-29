@@ -1,4 +1,4 @@
-package dfs.Tree;
+package dfs.binaryTree;
 
 public class InvertBT_226 {
   public class TreeNode {

@@ -1,4 +1,4 @@
-package dfs.Tree;
+package dfs.binaryTree;
 
 public class BalanceBST_1382 {
   public class TreeNode {

@@ -1,9 +1,9 @@
-package dfs.Tree;
+package dfs.binaryTree;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PreOrderBT_144 {
+public class InOrderBT_94 {
   public class TreeNode {
     int val;
     TreeNode left;
@@ -17,7 +17,7 @@ public class PreOrderBT_144 {
     }
   }
   
-  public List<Integer> preorderTraversal(TreeNode root) {
+  public List<Integer> inorderTraversal(TreeNode root) {
     List<Integer> res = new ArrayList<>();
     dfs(root, res);
     return res;
@@ -25,8 +25,8 @@ public class PreOrderBT_144 {
 
   public void dfs(TreeNode t, List<Integer> res) {
     if (t == null) return;
-    res.add(t.val);
     dfs(t.left, res);
+    res.add(t.val);
     dfs(t.right, res);
   }
 }

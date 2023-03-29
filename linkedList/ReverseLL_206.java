@@ -1,8 +1,7 @@
-package linkedList.twoPointers;
+package linkedList;
 
 public class ReverseLL_206 {
   public static ListNode reverseList(ListNode head) {
-    if (head == null || head.next == null) return head;
     ListNode newHead = null;
     while (head != null) {
       ListNode tmp = head.next;

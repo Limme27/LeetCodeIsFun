@@ -7,7 +7,6 @@ public class BinarySearch_704 {
     while (left <= right) {
       int i = left + (right-left) / 2;
       if (target == nums[i]) return i;
-      
       if (target < nums[i]) right = i-1;
       else left = i+1;
     }

@@ -1,4 +1,4 @@
-package dfs.Tree;
+package dfs.binaryTree;
 
 public class IsBTBalanced_110 {
   public class TreeNode {

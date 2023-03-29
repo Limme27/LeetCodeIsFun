@@ -1,5 +1,7 @@
 package linkedList.twoPointers;
 
+import linkedList.ListNode;
+
 class MiddleOfLL_876 {
   public ListNode middleNode(ListNode head) {
     ListNode slow = head, fast = head;

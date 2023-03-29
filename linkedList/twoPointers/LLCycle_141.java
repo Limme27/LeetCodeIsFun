@@ -1,5 +1,7 @@
 package linkedList.twoPointers;
 
+import linkedList.ListNode;
+
 public class LLCycle_141 {
   public boolean hasCycle(ListNode head) {
     ListNode slow = head, fast = head;

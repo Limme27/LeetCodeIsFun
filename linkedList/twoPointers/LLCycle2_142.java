@@ -1,4 +1,7 @@
 package linkedList.twoPointers;
+
+import linkedList.ListNode;
+
 // 142 -> 287
 public class LLCycle2_142 {
   public ListNode detectCycle(ListNode head) {

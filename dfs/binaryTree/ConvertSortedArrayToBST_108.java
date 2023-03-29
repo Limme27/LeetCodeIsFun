@@ -1,4 +1,4 @@
-package dfs.Tree;
+package dfs.binaryTree;
 
 public class ConvertSortedArrayToBST_108 {
   public class TreeNode {

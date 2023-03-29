@@ -6,7 +6,6 @@ import java.util.Map;
 public class ContainsDuplicate2_219 {
   public boolean containsNearbyDuplicate(int[] nums, int k) {
     Map<Integer, Integer> dict = new HashMap<Integer, Integer>();
-    
     for (int i = 0; i < nums.length; i++) {
       if (!dict.containsKey(nums[i])) dict.put(nums[i], i);
       else {
