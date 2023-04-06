@@ -12,8 +12,6 @@ class Solution {
             if (min > nums[j-1]) min = nums[j-1];
             mins[j] = min;
         }
-
-        
         Stack<Integer> s = new Stack<>();
         s.push(nums[len-1]);
         
@@ -25,7 +23,6 @@ class Solution {
             s.push(nums[j]);
             if (k > mins[j]) return true;
         }
-        
         return false;
     }
 }

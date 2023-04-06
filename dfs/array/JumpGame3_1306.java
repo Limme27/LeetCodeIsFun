@@ -1,4 +1,4 @@
-package dfs;
+package dfs.array;
 
 public class JumpGame3_1306 {
   public int[] visited = new int[50001];

@@ -1,4 +1,4 @@
-package dfs;
+package dfs.array;
 
 import java.util.Arrays;
 
