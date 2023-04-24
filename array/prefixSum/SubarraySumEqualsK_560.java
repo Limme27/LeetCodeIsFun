@@ -1,8 +1,11 @@
 package array.prefixSum;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import java.util.*;
+/* 
+    1 <= nums.length <= 2 * 104
+    -1000 <= nums[i] <= 1000 ====> sliding window not working
+    -107 <= k <= 107
+*/
 public class SubarraySumEqualsK_560 {
   public int subarraySum(int[] nums, int k) {
     Map<Integer, Integer> map = new HashMap<Integer, Integer>();
