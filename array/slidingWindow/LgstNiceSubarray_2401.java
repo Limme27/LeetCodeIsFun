@@ -15,5 +15,4 @@ public class LgstNiceSubarray_2401 {
     }
     return maxLen;
   }
-  
 }
