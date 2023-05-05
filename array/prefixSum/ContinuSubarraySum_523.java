@@ -1,8 +1,8 @@
 package array.prefixSum;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
+// 560 -> 523
 public class ContinuSubarraySum_523 {
   public boolean checkSubarraySum(int[] nums, int k) {
     Map<Integer, Integer> map = new HashMap<Integer, Integer>();

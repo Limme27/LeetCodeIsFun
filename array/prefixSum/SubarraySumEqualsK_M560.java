@@ -6,7 +6,7 @@ import java.util.*;
     -1000 <= nums[i] <= 1000 ====> sliding window not working
     -107 <= k <= 107
 */
-public class SubarraySumEqualsK_560 {
+public class SubarraySumEqualsK_M560 {
   public int subarraySum(int[] nums, int k) {
     Map<Integer, Integer> map = new HashMap<Integer, Integer>();
     // (key: value) = (prefixSum: counter)

@@ -1,4 +1,4 @@
-package dfs.array;
+package array.backTracking;
 
 import java.util.Arrays;
 

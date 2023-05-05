@@ -7,17 +7,6 @@ import java.util.*;
 // For example, [0,0,0,1,0,0,1,0,0,0] where k = 2
 public class CountSubarraysWithKOdds_m1248 {
   public static int numberOfSubarrays(int[] nums, int k) {
-    int count = 0;
-    /* 
-    int oddCount = 0;
-    int[] prefix = new int[nums.length + 1];
-    prefix[0] = 1;
-    for (int num : nums) {
-      oddCount += num % 2 == 1 ? 1 : 0;
-      prefix[oddCount]++;
-      if (oddCount >= k) count += prefix[oddCount - k];
-    }
-    */
     for (int i = 0; i < nums.length; i++) {
       if (nums[i] % 2 == 0) nums[i] = 0;
       else nums[i] = 1;
@@ -25,6 +14,7 @@ public class CountSubarraysWithKOdds_m1248 {
     // (key: value) = (currSum: counter)
     Map<Integer, Integer> map = new HashMap<Integer, Integer>();
     map.put(0, 1);
+    int count = 0;
     int sum = 0;
     for (int num : nums) {
       sum += num;
@@ -35,6 +25,19 @@ public class CountSubarraysWithKOdds_m1248 {
     }
     return count;
   }
+  
+  public static int numberOfSubarraysChatGPT(int[] nums, int k) {
+    int count = 0;
+    int oddCount = 0;
+    int[] prefix = new int[nums.length + 1];
+    prefix[0] = 1;
+    for (int num : nums) {
+      oddCount += num % 2 == 1 ? 1 : 0;
+      prefix[oddCount]++;
+      if (oddCount >= k) count += prefix[oddCount - k];
+    }
+    return count;
+  }  
 
   public static void main(String[] args) {
     int[] a = {1,1,2,1,1};
