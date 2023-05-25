@@ -10,8 +10,8 @@ public class NumOfDistinctSublists_hr {
     int l = 0;
     int r = 0;
     while (r < list.size()) {
-      int current = list.get(r);
-      map.put(current, map.getOrDefault(current, 0) + 1);
+      int curr = list.get(r);
+      map.put(curr, map.getOrDefault(curr, 0) + 1);
       while (set.size() == map.size()) {
         ans += list.size() - r;
         int removed = list.get(l);

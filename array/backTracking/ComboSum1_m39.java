@@ -13,14 +13,15 @@ public class ComboSum1_m39 {
     backTrack(ans, new ArrayList<>(), candidates, 0, target);
     return ans;
   }
-  private void backTrack (List<List<Integer>> ans, List<Integer> curr, int[] candidates, int currIndx, int target) {
+  private void backTrack (List<List<Integer>> ans, List<Integer> curr, int[] candidates, int currLv, int target) {
     if (target < 0) return;
     if (target == 0) {
       ans.add(new ArrayList<>(curr));
       return;
     }  
-    for (int i = currIndx; i < candidates.length; i++) {
+    for (int i = currLv; i < candidates.length; i++) {
       curr.add(candidates[i]);
+      // i keeps the same to allow multi use of the same element
       backTrack(ans, curr, candidates, i , target - candidates[i]);
       int len = curr.size();
       curr.remove(len-1);

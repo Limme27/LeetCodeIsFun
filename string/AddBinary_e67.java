@@ -1,6 +1,6 @@
 package string;
 
-public class AddBinary_67 {
+public class AddBinary_e67 {
   public String addBinary(String a, String b) {
     StringBuilder s = new StringBuilder();
     
@@ -22,7 +22,7 @@ public class AddBinary_67 {
 
     return s.toString();
   }
-  // #66 Plus One
+  // #66 Plus One Easy
   public int[] plusOne(int[] digits) {
     StringBuilder s = new StringBuilder();
     int carry = 0;
