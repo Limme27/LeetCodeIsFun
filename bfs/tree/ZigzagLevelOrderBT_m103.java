@@ -3,8 +3,8 @@ package bfs.tree;
 import dfs.binaryTree.TreeNode;
 import java.util.*;
 
-public class LevelOrderBT_m102 {
-  public List<List<Integer>> levelOrder(TreeNode root) {
+public class ZigzagLevelOrderBT_m103 {
+  public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
     List<List<Integer>> ans = new ArrayList<>();
     if (root == null) return ans;
     
@@ -19,8 +19,12 @@ public class LevelOrderBT_m102 {
         if (curr.left != null) queue.add(curr.left);
         if (curr.right != null) queue.add(curr.right);
       }
-      if (!tmp.isEmpty()) ans.add(tmp);
+      if (!tmp.isEmpty()) {
+        if (ans.size() % 2 == 1) Collections.reverse(tmp);
+        ans.add(tmp);
+      }  
     }
     return ans;
   }
+  
 }

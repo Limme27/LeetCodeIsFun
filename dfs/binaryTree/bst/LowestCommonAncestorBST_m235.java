@@ -1,4 +1,6 @@
-package dfs.binaryTree;
+package dfs.binaryTree.bst;
+
+import dfs.binaryTree.TreeNode;
 
 public class LowestCommonAncestorBST_m235 {
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

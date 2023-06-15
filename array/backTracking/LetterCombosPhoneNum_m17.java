@@ -17,20 +17,18 @@ public class LetterCombosPhoneNum_m17 {
     '8', "tuv",
     '9', "wxyz"));
     List<String> ans = new ArrayList<>();
-    if (digits.length() != 0) backTrack(ans, digits, new StringBuilder(), 0);
+    if (digits.length() != 0) backTrack(ans, digits, "", 0);
     return ans;
   }
 
-  private static void backTrack(List<String> ans, String digits, StringBuilder curr, int currLv) {
+  private static void backTrack(List<String> ans, String digits, String curr, int currLv) {
     if (currLv > digits.length()) return;
     if (curr.length() == digits.length()) {
-      ans.add(curr.toString());
+      ans.add(curr);
       return;
     }
     for (int i = 0; i < map.get(digits.charAt(currLv)).length(); i++) {
-      curr.append(map.get(digits.charAt(currLv)).charAt(i));
-      backTrack(ans, digits, curr, currLv+1);
-      curr.deleteCharAt(curr.length()-1);
+      backTrack(ans, digits, curr + map.get(digits.charAt(currLv)).charAt(i), currLv+1);
     }
   }
   public static void main(String[] args) {

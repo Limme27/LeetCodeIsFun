@@ -1,4 +1,6 @@
-package dfs.binaryTree;
+package dfs.binaryTree.bst;
+
+import dfs.binaryTree.TreeNode;
 
 public class BalanceBST_1382 {
   public TreeNode balanceBST(TreeNode root) {
