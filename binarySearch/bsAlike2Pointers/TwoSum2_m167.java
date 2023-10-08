@@ -1,6 +1,7 @@
-package binarySearch.twoPointerNotBS;
+package binarySearch.bsAlike2Pointers;
 
-public class TwoSum2_167 {
+// 167 -> 15
+public class TwoSum2_m167 {
   public int[] twoSum(int[] numbers, int target) {
     int[] res = new int[2];
     int l = 0, r = numbers.length-1;

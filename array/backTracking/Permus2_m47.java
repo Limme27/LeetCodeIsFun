@@ -19,7 +19,7 @@ public class Permus2_m47 {
     // -10 <= nums[i] <= 10
     int prev = 11;
     for (int i = 0; i < nums.length; i++) {
-      // ensure same nums[i] won't be added twice in one iteration && only ONE value (different nums[i] w/ the same value) will be added per index
+      // although different index, still manifest as the same Permutation
       if (visited[i] != 1 && nums[i] != prev) {
         curr.add(nums[i]);
         visited[i] = 1;

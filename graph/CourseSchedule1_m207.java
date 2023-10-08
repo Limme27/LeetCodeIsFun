@@ -23,17 +23,17 @@ public class CourseSchedule1_m207 {
 
   private boolean graphHasCycle(Map<Integer, List<Integer>> map) {
     for (int course : map.keySet()) {
-      if (pathHasCycle(map, new HashSet<>(), course)) return true;
+      if (vertexHasCycle(map, new HashSet<>(), course)) return true;
     }
     return false;
   }
 	
-  private boolean pathHasCycle(Map<Integer, List<Integer>> map, Set<Integer> visited, int course) {
+  private boolean vertexHasCycle(Map<Integer, List<Integer>> map, Set<Integer> visited, int course) {
     if (visited.contains(course)) return true;
     if (!map.containsKey(course)) return false;
     visited.add(course);
     for (int prereq : map.get(course)) {
-      if (pathHasCycle(map, visited, prereq)) return true;
+      if (vertexHasCycle(map, visited, prereq)) return true;
     }
     visited.remove(course);
     map.get(course).clear();

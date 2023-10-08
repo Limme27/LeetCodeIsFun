@@ -1,6 +1,6 @@
-package binarySearch.twoPointerNotBS;
+package binarySearch.bsAlike2Pointers;
 // this is not a binary search question, just a 2-pointer question
-public class SumofSquareNumbers_633 {
+public class SumofSquareNumbers_m633 {
   public boolean judgeSquareSum(int c) {
     int l = 0, r = (int)Math.sqrt(c);
     while (l <= r) {
